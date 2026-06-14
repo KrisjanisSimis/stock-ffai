@@ -2,8 +2,8 @@ name: FFAI Stock Alert
 
 on:
   schedule:
-    # Runs at 22:00 UTC every weekday (Mon–Fri) — after US market close (~21:00 UTC)
-    - cron: '0 22 * * 1-5'
+    # Runs at 22:00 UTC every day — after US market close (~21:00 UTC)
+    - cron: '0 22 * * *'
   workflow_dispatch:   # Allow manual trigger from GitHub UI
 
 jobs:
